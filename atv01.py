@@ -1,1 +1,1 @@
-print("Me erra!")
+print("Hora do intervalo!")
