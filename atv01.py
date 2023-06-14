@@ -1,2 +1,2 @@
 print("Hora do intervalo!")
-print("Boa Noite!")
+print("Buenas Noches!")
