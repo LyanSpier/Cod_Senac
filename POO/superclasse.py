@@ -11,5 +11,9 @@ class Cachorro(Animal):
         super().__init__(nome,idade)
         self.raca = raca 
         
-    def aban_rabo(self):
+    def abana_rabo(self):
         print("abana o rabo")
+        
+class Gato(Animal):
+    def ronronar(self):
+        print("O",self.nome,"esta ronronando!")
