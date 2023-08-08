@@ -9,9 +9,11 @@ class categoria(models.Model):
     def __str__(self):
         return self.categoria
     
-class conta(models.Model):
+class Conta(models.Model):
     banco_choices = (
         ('NU', "nubank"),
+        ('BB', "Banco do Brasil"),
+        ('BD', "Bradesco"),
         ('CX', "Caixa"),
     )
     
@@ -23,7 +25,7 @@ class conta(models.Model):
     apelido = models.CharField(max_length=50)
     banco = models.CharField(max_length=2, choices=banco_choices)
     tipo = models.CharField(max_length=2,choices=tipo_choices)
-    valor = models.FloatField()
+    valor = models.FloatField(verbose_name='Valor do deposito')
     icone = models.ImageField(upload_to='Icone')
     
     def __str__(self):
